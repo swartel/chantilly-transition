@@ -16,7 +16,7 @@ const Header = () => {
               06 87 09 09 37
             </a>
             <a 
-              href="#contact"
+              href="mailto:contact@immobilier-chantilly.fr"
               className="bg-accent text-accent-foreground px-4 py-2 rounded-md text-sm font-semibold hover:bg-accent/90 transition-colors"
             >
               Contact
