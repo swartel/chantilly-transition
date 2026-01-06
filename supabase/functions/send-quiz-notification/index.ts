@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
 const MAILGUN_API_KEY = Deno.env.get("MAILGUN_API_KEY");
-const MAILGUN_DOMAIN = "sandbox5f9f8f9f.mailgun.org"; // Sandbox domain, will need to be updated
+const MAILGUN_DOMAIN = "sandbox4ae225df1e794a68bcac3fb39f414015.mailgun.org"; // Sandbox domain, will need to be updated
 const NOTIFICATION_EMAIL = "contact@immobilier-chantilly.fr";
 
 const corsHeaders = {
