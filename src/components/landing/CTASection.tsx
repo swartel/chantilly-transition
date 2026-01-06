@@ -24,10 +24,10 @@ const CTASection = () => {
           <span className="text-primary-foreground/60">ou</span>
           
           <a 
-            href="tel:+33600000000" 
+            href="tel:+33687090937" 
             className="text-lg font-semibold text-primary-foreground hover:text-accent transition-colors duration-200 underline underline-offset-4"
           >
-            M'appeler au 06 XX XX XX XX
+            M'appeler au 06 87 09 09 37
           </a>
         </div>
       </div>

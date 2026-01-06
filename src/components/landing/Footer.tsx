@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <p className="font-serif text-lg font-bold text-primary">M. WARTEL</p>
+            <p className="font-serif text-lg font-bold text-primary">Stéphane WARTEL</p>
             <p className="text-sm text-muted-foreground">Conseiller immobilier à Chantilly</p>
           </div>
           

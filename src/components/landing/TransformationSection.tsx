@@ -1,4 +1,4 @@
-import happyCoupleImage from "@/assets/happy-couple.jpg";
+import happyCoupleImage from "@/assets/couple-senior-heureux.jpg";
 import modernApartmentImage from "@/assets/modern-apartment.jpg";
 
 const TransformationSection = () => {

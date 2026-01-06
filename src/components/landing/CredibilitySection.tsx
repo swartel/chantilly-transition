@@ -1,4 +1,4 @@
-import agentPortrait from "@/assets/agent-portrait.jpg";
+import agentPortrait from "@/assets/stephane-wartel-consultant-immobilier-chantilly-60500.jpg";
 
 const CredibilitySection = () => {
   return (
@@ -15,11 +15,11 @@ const CredibilitySection = () => {
               <div className="shrink-0">
                 <img 
                   src={agentPortrait} 
-                  alt="M. WARTEL - Expert immobilier à Chantilly" 
+                  alt="Stéphane WARTEL - Consultant immobilier à Chantilly" 
                   className="w-40 h-48 object-cover rounded-lg shadow-card"
                 />
                 <div className="mt-3 text-center">
-                  <p className="font-semibold text-primary">M. WARTEL</p>
+                  <p className="font-semibold text-primary">Stéphane WARTEL</p>
                   <p className="text-sm text-muted-foreground">Conseiller immobilier</p>
                   <div className="flex justify-center gap-2 mt-2">
                     <a href="#" className="text-link hover:text-link-hover" aria-label="Instagram">
@@ -48,7 +48,7 @@ const CredibilitySection = () => {
             {/* Testimonial */}
             <div className="bg-card rounded-lg p-6 shadow-card border-l-4 border-accent">
               <blockquote className="text-lg italic text-foreground mb-4">
-                "Grâce à M. WARTEL, nous avons quitté notre grande maison de Gouvieux pour un T3 centre-ville sans stress. Il s'est occupé de tout."
+                "Grâce à Mr WARTEL, nous avons quitté notre grande maison de Gouvieux pour un T3 centre-ville sans stress. Il s'est occupé de tout."
               </blockquote>
               <p className="font-semibold text-primary">— Mr et Mme Deschamps</p>
             </div>
