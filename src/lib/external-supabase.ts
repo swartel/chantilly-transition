@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 
 // External Supabase client for lead storage
-const EXTERNAL_SUPABASE_URL = 'https://xueatlxfloivzpetuuaa.supabase.co';
-const EXTERNAL_SUPABASE_KEY = 'sb_publishable_pFSbzBuEc4klAHnV2Gc7XQ_Q7mRGl4o';
+const EXTERNAL_SUPABASE_URL = import.meta.env.VITE_SUPABASE_DATABASE_URL;
+const EXTERNAL_SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export const externalSupabase = createClient(EXTERNAL_SUPABASE_URL, EXTERNAL_SUPABASE_KEY);
 
