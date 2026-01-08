@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
-const MAILGUN_API_KEY = Deno.env.get("MAILGUN_API_KEY");
-const MAILGUN_DOMAIN = "api.eu.mailgun.net/v3/immobilier-chantilly.fr/messages";
+const MAILGUN_API_KEY = Deno.env.get("VITE_MAILGUN_API_KEY");
+const MAILGUN_DOMAIN = "immobilier-chantilly.fr";
 const NOTIFICATION_EMAIL = "contact@immobilier-chantilly.fr";
 
 const corsHeaders = {
@@ -129,7 +129,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // For Mailgun EU region, use api.eu.mailgun.net
     // For US region, use api.mailgun.net
-    const mailgunUrl = `https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
+    const mailgunUrl = `https://api.eu.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
 
     console.log("Sending email to Mailgun...");
     
