@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
-const MAILGUN_API_KEY = Deno.env.get("VITE_MAILGUN_API_KEY");
+const MAILGUN_API_KEY = import.meta.env.VITE_MAILGUN_API_KEY;
 const MAILGUN_DOMAIN = "immobilier-chantilly.fr";
 const NOTIFICATION_EMAIL = "contact@immobilier-chantilly.fr";
 
