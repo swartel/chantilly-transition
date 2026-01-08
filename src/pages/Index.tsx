@@ -4,6 +4,7 @@ import ChallengesSection from "@/components/landing/ChallengesSection";
 import TransformationSection from "@/components/landing/TransformationSection";
 import OfferSection from "@/components/landing/OfferSection";
 import CredibilitySection from "@/components/landing/CredibilitySection";
+import EbookPromoSection from "@/components/landing/EbookPromoSection";
 import QuizSection from "@/components/landing/QuizSection";
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ const Index = () => {
         <TransformationSection />
         <OfferSection />
         <CredibilitySection />
+        <EbookPromoSection />
         <QuizSection />
         <CTASection />
       </main>
