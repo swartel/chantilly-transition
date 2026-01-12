@@ -72,17 +72,12 @@ export default function QuizSection() {
       // Continue anyway to show results
     }
 
-    // Send email notification via Supabase edge function
+    // Send email notification via Netlify Function
     try {
-      const supabaseUrl = import.meta.env.VITE_SUPABASE_DATABASE_URL;
-      const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-      
-      const response = await fetch(`${supabaseUrl}/functions/v1/send-quiz-notification`, {
+      const response = await fetch('/.netlify/functions/send-quiz-notification', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${supabaseKey}`,
-          'apikey': supabaseKey
         },
         body: JSON.stringify(leadPayload)
       });
