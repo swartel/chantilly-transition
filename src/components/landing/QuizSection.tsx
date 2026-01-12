@@ -72,18 +72,24 @@ export default function QuizSection() {
       // Continue anyway to show results
     }
 
-    // Send email notification via edge function
+    // Send email notification via Supabase edge function
     try {
-      const response = await fetch('/functions/v1/send-quiz-notification', {
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_DATABASE_URL;
+      const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+      
+      const response = await fetch(`${supabaseUrl}/functions/v1/send-quiz-notification`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${supabaseKey}`,
+          'apikey': supabaseKey
         },
         body: JSON.stringify(leadPayload)
       });
       
       if (!response.ok) {
-        console.error('Failed to send email notification');
+        const errorText = await response.text();
+        console.error('Failed to send email notification:', errorText);
       }
     } catch (error) {
       console.error('Error sending notification:', error);
